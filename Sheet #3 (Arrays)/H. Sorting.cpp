@@ -3,18 +3,18 @@ using namespace std;
 
 int main()
 {
-    int noi;
-    cin >> noi;
-    int myArr[noi];
+    int num_of_items;
+    cin >> num_of_items;
+    int myArr[num_of_items];
 
-    for (int i = 0; i < noi; i++)
+    for (int i = 0; i < num_of_items; i++)
     {
         cin >> myArr[i];
     }
 
-    for (int i = 0; i < noi - 1; i++)
+    for (int i = 0; i < num_of_items - 1; i++)
     {
-        for (int j = 0; j < noi - i - 1; j++)
+        for (int j = 0; j < num_of_items - i - 1; j++)
         {
             if (myArr[j] > myArr[j + 1])
             {
@@ -26,7 +26,7 @@ int main()
         }
     }
 
-    for (int i = 0; i < noi; i++)
+    for (int i = 0; i < num_of_items; i++)
     {
         cout << myArr[i] << " ";
     }
